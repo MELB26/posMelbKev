@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MK Street Food's</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="container">
+  <h1>MK Street Food's</h1>
+
+  <div class="menu-section" id="food-section">
+    <h2><span class="food-icon"></span> Food</h2>
+    <div class="menu">
+      <div class="menu-item">
+        <span>Kikiam - 12 pesos</span>
+        <button onclick="addItem('Kikiam', 12)">Add</button>
+      </div>
+      <div class="menu-item">
+        <span>Kwek Kwek - 20 pesos</span>
+        <button onclick="addItem('Kwek Kwek', 20)">Add</button>
+      </div>
+      <div class="menu-item">
+        <span>Proben - 10 pesos</span>
+        <button onclick="addItem('Proben', 10)">Add</button>
+      </div>
+      <div class="menu-item">
+        <span>Chicken Skin - 10 pesos</span>
+        <button onclick="addItem('Chicken Skin', 10)">Add</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-section" id="drink-section">
+    <h2><span class="drink-icon"></span> Drinks</h2>
+    <div class="menu">
+      <div class="menu-item">
+        <span>Sago Gulaman - 10 pesos</span>
+        <button onclick="addItem('Sago Gulaman', 10)">Add</button>
+      </div>
+      <div class="menu-item">
+        <span>Buko Juice - 20 pesos</span>
+        <button onclick="addItem('Buko Juice', 20)">Add</button>
+      </div>
+      <div class="menu-item">
+        <span>Pineapple Juice - 20 pesos</span>
+        <button onclick="addItem('Pineapple Juice', 20)">Add</button>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="order">
+    <h2>Order List:</h2>
+    <ul id="orderList"></ul>
+    <button class="button" onclick="finalizeOrder()">Queue your order</button>
+  </div>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
